@@ -13,7 +13,7 @@ RUN apk add --update ca-certificates \
   bash
 
 # Install kip cli
-RUN curl -LOk https://github.com/debugged-software/kip/releases/download/v0.0.1/kip--linux-386.zip \
+RUN curl -LOk https://github.com/debugged-software/kip/releases/download/v0.0.5/kip--linux-386.zip \
   && unzip kip--linux-386.zip \
   && mv linux-386/kip /usr/local/bin \
   && rm kip--linux-386.zip
