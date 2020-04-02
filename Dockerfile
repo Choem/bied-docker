@@ -11,7 +11,7 @@ RUN apk add --update ca-certificates \
   git \ 
   openssl \
   bash \
-  python
+  && apk add python3
 
 # Install gcloud
 RUN curl https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-278.0.0-linux-x86_64.tar.gz > /tmp/google-cloud-sdk.tar.gz
