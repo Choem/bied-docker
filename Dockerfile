@@ -21,7 +21,7 @@ RUN mkdir -p /usr/local/gcloud \
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 
 # Install kip cli
-RUN curl -LOk https://github.com/debugged-software/kip/releases/download/v0.0.7/kip--linux-386.zip \
+RUN curl -LOk https://github.com/debugged-software/kip/releases/download/v0.0.9/kip--linux-386.zip \
   && unzip kip--linux-386.zip \
   && mv linux-386/kip /usr/local/bin \
   && rm kip--linux-386.zip
